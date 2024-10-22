@@ -1,7 +1,4 @@
-import sys
-sys.meta_path.append(CustomFinder)
-
-import PTN
+from sgd.PTN.parse import PTN
 
 class parse_title:
     def __init__(self, name):
