@@ -1,9 +1,8 @@
-import PTN
-
+from PTN import parse
 
 class parse_title:
     def __init__(self, name):
-        ptn_dict = PTN.parse(name)
+        ptn_dict = parse(name)
         key_list = [
             "resolution",
             "codec",
