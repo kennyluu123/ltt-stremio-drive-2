@@ -2,7 +2,7 @@ from sgd.PTN.parse import PTN
 
 class parse_title:
     def __init__(self, name):
-        ptn_dict = PTN.parse(name)
+        ptn_dict = PTN.parse(name, standardise=True, coherent_types=False)
         key_list = [
             "resolution",
             "codec",
