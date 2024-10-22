@@ -1,8 +1,11 @@
-from PTN import parse
+import sys
+sys.meta_path.append(CustomFinder)
+
+import PTN
 
 class parse_title:
     def __init__(self, name):
-        ptn_dict = parse(name)
+        ptn_dict = PTN.parse(name)
         key_list = [
             "resolution",
             "codec",
